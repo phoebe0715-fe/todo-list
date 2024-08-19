@@ -1,6 +1,12 @@
 # TodoList
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0 D
+
+## Demo
+
+https://github.com/user-attachments/assets/581899e5-8769-41c1-9c78-984ef526d4ae
+
+
 
 ## Development server
 
