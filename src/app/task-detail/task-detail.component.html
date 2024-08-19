@@ -1,32 +1,41 @@
 <div class="task-detail-container">
-    <h3>Edit task</h3>
+    <h3>Edit Task</h3>
 
-    <label>
-        Title: <input class="task-title" [(ngModel)]="task.title"/>
-    </label>
-    <label>
-        Description: <textarea class="task-description" [(ngModel)]="task.description"></textarea>
-    </label>
-    <label>
-        Due Date: <input class="task-due-date" type="date" [(ngModel)]="task.dueDate"/>
-    </label>
-    <label>
-        Status: 
-        <select [(ngModel)]="task.status">
+    <div class="form-group">
+        <label for="task-title">Title:</label>
+        <input id="task-title" class="task-title" [(ngModel)]="task.title"/>
+    </div>
+
+    <div class="form-group">
+        <label for="task-description">Description:</label>
+        <textarea id="task-description" class="task-description" [(ngModel)]="task.description"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="task-due-date">Due Date:</label>
+        <input id="task-due-date" class="task-due-date" type="date" [(ngModel)]="task.dueDate"/>
+    </div>
+
+    <div class="form-group">
+        <label for="task-status">Status:</label>
+        <select id="task-status" [(ngModel)]="task.status">
             <option>Incomplete</option>
             <option>In Progress</option>
             <option>Completed</option>
         </select>
-    </label>
-    <label>
-        Priority: 
-        <select [(ngModel)]="task.priority">
+    </div>
+
+    <div class="form-group">
+        <label for="task-priority">Priority:</label>
+        <select id="task-priority" [(ngModel)]="task.priority">
             <option>Low</option>
             <option>Medium</option>
             <option>High</option>
         </select>
-    </label>
+    </div>
 
-    <button (click)="onSave()">Save</button>
-    <button (click)="onCancel()">Cancel</button>
+    <div class="button-group">
+        <button class="btn-save" (click)="onSave()">Save</button>
+        <button class="btn-cancel" (click)="onCancel()">Cancel</button>
+    </div>
 </div>
